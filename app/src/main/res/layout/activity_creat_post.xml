@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_logo"
+    tools:context=".ui.CreatPostActivity">
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="145dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus_add_insert_append_icon_179162" />
+
+    <EditText
+        android:id="@+id/postText"
+        android:layout_width="302dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_border_blue"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImage" />
+
+    <TextView
+        android:id="@+id/addPost"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/round_blue"
+        android:gravity="center"
+        android:text="Создать новость"
+        android:textColor="@color/white_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

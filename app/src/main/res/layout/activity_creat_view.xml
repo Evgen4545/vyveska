@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_logo"
+    tools:context=".ui.CreatPostActivity">
+
+    <ImageView
+        android:id="@+id/addImageView"
+        android:layout_width="145dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus_add_insert_append_icon_179162" />
+
+    <EditText
+        android:id="@+id/viewText"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_border_blue"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="название услуги"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImageView" />
+
+    <EditText
+        android:id="@+id/viewTextFull"
+        android:layout_width="302dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_border_blue"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="полное описание услуги"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPrice" />
+
+    <TextView
+        android:id="@+id/addView"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/round_blue"
+        android:gravity="center"
+        android:text="Создать услугу"
+        android:textColor="@color/white_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTextFull" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/round_border_blue"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Цена"
+        android:inputType="phone"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
